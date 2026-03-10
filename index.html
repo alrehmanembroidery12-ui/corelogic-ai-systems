@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoreLogic AI Systems | Professional AI Lab</title>
+    <title>CoreLogic AI Systems | Contact & Sales</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Poppins:wght@700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -12,15 +12,12 @@
         .font-heading { font-family: 'Poppins', sans-serif; }
         .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
         .gradient-text { background: linear-gradient(90deg, #6366F1, #38BDF8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        
-        /* Fixed Reliable Image Links */
         .card-web { background-image: linear-gradient(to top, #030712, rgba(3, 7, 18, 0.4)), url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&auto=format'); background-size: cover; }
         .card-app { background-image: linear-gradient(to top, #030712, rgba(3, 7, 18, 0.4)), url('https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=600&auto=format'); background-size: cover; }
         .card-ai { background-image: linear-gradient(to top, #030712, rgba(3, 7, 18, 0.4)), url('https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=600&auto=format'); background-size: cover; }
-        
         .btn-primary { background: linear-gradient(90deg, #6366F1, #818CF8); box-shadow: 0 10px 20px -10px #6366F1; }
-        .pulse-dot { width: 8px; height: 8px; background: #22c55e; border-radius: 50%; box-shadow: 0 0 10px #22c55e; animation: pulse 2s infinite; }
-        @keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(1.5); } }
+        .input-glass { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 12px; color: white; width: 100%; outline: none; transition: 0.3s; }
+        .input-glass:focus { border-color: #6366F1; background: rgba(255, 255, 255, 0.05); }
     </style>
 </head>
 <body>
@@ -32,15 +29,13 @@
             <a href="#services" class="hover:text-white transition">Services</a>
             <a href="#dashboard" class="hover:text-white transition">Dashboard</a>
             <a href="#pricing" class="hover:text-white transition">Pricing</a>
+            <a href="#contact" class="hover:text-white transition">Contact</a>
         </div>
-        <a href="#contact" class="btn-primary text-white px-6 py-2 rounded-xl font-bold text-xs uppercase tracking-wider">Get Quote</a>
+        <a href="#contact" class="btn-primary text-white px-6 py-2 rounded-xl font-bold text-xs uppercase tracking-wider">Start Project</a>
     </nav>
 
     <section id="home" class="pt-40 pb-20 px-6 lg:px-12 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
         <div class="flex-1 text-left">
-            <div class="inline-block px-4 py-1 mb-6 glass rounded-full border border-white/10 text-[10px] font-bold tracking-widest text-indigo-400 uppercase">
-                🚀 Engineering the Future
-            </div>
             <h1 class="text-5xl lg:text-7xl font-extrabold font-heading mb-6 tracking-tight leading-tight">
                 Next-Generation <br><span class="gradient-text">Software & AI</span> Solutions
             </h1>
@@ -48,97 +43,67 @@
                 We build powerful digital products including web applications, AI tools, and custom automation systems.
             </p>
             <div class="flex gap-4">
-                <a href="#dashboard" class="btn-primary text-white px-8 py-4 rounded-2xl font-bold text-sm transition hover:scale-105">View Dashboard</a>
-                <a href="#services" class="glass px-8 py-4 rounded-2xl font-bold text-sm border border-white/10 hover:bg-white/5 transition">Our Services</a>
+                <a href="#contact" class="btn-primary text-white px-8 py-4 rounded-2xl font-bold text-sm transition hover:scale-105">Start Your Project</a>
+                <a href="https://api.whatsapp.com/send?phone=15551425420&text=Hello" target="_blank" class="glass px-8 py-4 rounded-2xl font-bold text-sm border border-white/10 hover:bg-white/5 transition flex items-center gap-2">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp Chat
+                </a>
             </div>
         </div>
         <div class="flex-1 w-full">
             <div class="glass p-2 rounded-[2.5rem] border-white/10 shadow-2xl">
-                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format" class="rounded-[2.2rem] w-full object-cover h-[400px]" alt="CoreLogic Lab">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format" class="rounded-[2.2rem] w-full object-cover h-[400px]" alt="Lab">
             </div>
         </div>
     </section>
 
-    <div class="py-16 border-y border-white/5 bg-white/[0.01]">
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div><h3 class="text-4xl font-bold text-white mb-1">150+</h3><p class="text-gray-500 text-[10px] font-bold uppercase tracking-widest">Projects</p></div>
-            <div><h3 class="text-4xl font-bold text-indigo-500 mb-1">80+</h3><p class="text-gray-500 text-[10px] font-bold uppercase tracking-widest">Clients</p></div>
-            <div><h3 class="text-4xl font-bold text-white mb-1">25</h3><p class="text-gray-500 text-[10px] font-bold uppercase tracking-widest">AI Nodes</p></div>
-            <div><h3 class="text-4xl font-bold text-green-500 mb-1">99.9%</h3><p class="text-gray-500 text-[10px] font-bold uppercase tracking-widest">Uptime</p></div>
-        </div>
-    </div>
+    <section id="contact" class="py-32 px-6 lg:px-12 max-w-5xl mx-auto">
+        <div class="glass p-10 lg:p-16 rounded-[3rem] border border-white/10 relative overflow-hidden">
+            <div class="absolute -top-24 -right-24 w-64 h-64 bg-indigo-600/10 rounded-full blur-[100px]"></div>
+            
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold font-heading mb-4 text-white">Let's Build Something <span class="text-indigo-500">Great</span></h2>
+                <p class="text-gray-500">Share your project details and our team will get back to you within 24 hours.</p>
+            </div>
 
-    <section id="services" class="py-32 px-6 lg:px-12 max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl font-bold font-heading mb-4 text-white">Core Expertise</h2>
-            <p class="text-gray-500">Professional automation and high-scale development.</p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="glass card-web p-10 rounded-[2.5rem] h-[450px] flex flex-col justify-end border border-white/5 transition hover:-translate-y-4">
-                <i data-lucide="monitor" class="text-indigo-500 mb-6 w-10 h-10"></i>
-                <h3 class="text-2xl font-bold mb-3 text-white">Web Systems</h3>
-                <p class="text-gray-300 text-sm leading-relaxed">SaaS dashboards and enterprise panels built for global scale.</p>
-            </div>
-            <div class="glass card-app p-10 rounded-[2.5rem] h-[450px] flex flex-col justify-end border border-white/5 transition hover:-translate-y-4">
-                <i data-lucide="smartphone" class="text-sky-500 mb-6 w-10 h-10"></i>
-                <h3 class="text-2xl font-bold mb-3 text-white">Mobile Apps</h3>
-                <p class="text-gray-300 text-sm leading-relaxed">High-fidelity iOS and Android applications with native performance.</p>
-            </div>
-            <div class="glass card-ai p-10 rounded-[2.5rem] h-[450px] flex flex-col justify-end border border-white/5 transition hover:-translate-y-4">
-                <i data-lucide="cpu" class="text-green-500 mb-6 w-10 h-10"></i>
-                <h3 class="text-2xl font-bold mb-3 text-white">AI Solutions</h3>
-                <p class="text-gray-300 text-sm leading-relaxed">Custom RAG engines and LLM integration for business data.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="dashboard" class="py-32 bg-white/[0.02] border-y border-white/5">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="flex justify-between items-center mb-16">
-                <h2 class="text-4xl font-bold font-heading">Neural Dashboard</h2>
-                <div class="flex items-center space-x-3 glass px-5 py-2 rounded-xl border-green-500/20">
-                    <div class="pulse-dot"></div>
-                    <span class="text-green-500 text-[10px] font-bold tracking-widest uppercase">System Online</span>
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label class="text-xs font-bold uppercase tracking-widest text-gray-500 mb-2 block">Full Name</label>
+                    <input type="text" placeholder="Husnain Khan" class="input-glass">
                 </div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                <div class="glass p-8 rounded-[2rem] border-l-4 border-indigo-500 flex flex-col justify-between h-72">
-                    <div>
-                        <h4 class="text-2xl font-bold text-white mb-2">WhatsApp Sales Agent</h4>
-                        <p class="text-gray-500 text-sm">v2.1 Stable Node with MongoDB Memory.</p>
-                    </div>
-                    <a href="https://api.whatsapp.com/send?phone=15551425420&text=Hello" target="_blank" class="bg-indigo-600 text-white w-max px-8 py-3 rounded-xl font-bold text-xs uppercase tracking-widest hover:bg-white hover:text-black transition">Launch</a>
+                <div>
+                    <label class="text-xs font-bold uppercase tracking-widest text-gray-500 mb-2 block">Email Address</label>
+                    <input type="email" placeholder="husnain@example.com" class="input-glass">
                 </div>
-                <div class="glass p-8 rounded-[2rem] border-l-4 border-gray-800 opacity-60 flex flex-col justify-between h-72">
-                    <div><h4 class="text-2xl font-bold text-gray-400 mb-2">Doc-Intel Engine</h4><p class="text-gray-600 text-sm">Under development for enterprise data.</p></div>
-                    <button class="bg-white/5 text-gray-700 px-8 py-3 rounded-xl font-bold text-xs cursor-not-allowed uppercase">Locked</button>
+                <div class="md:col-span-2">
+                    <label class="text-xs font-bold uppercase tracking-widest text-gray-500 mb-2 block">Project Type</label>
+                    <select class="input-glass">
+                        <option>AI Chatbot Automation</option>
+                        <option>Custom Web Application</option>
+                        <option>Mobile App Development</option>
+                        <option>WordPress Plugin</option>
+                    </select>
                 </div>
-            </div>
+                <div class="md:col-span-2">
+                    <label class="text-xs font-bold uppercase tracking-widest text-gray-500 mb-2 block">Your Message</label>
+                    <textarea rows="4" placeholder="Tell us about your project..." class="input-glass"></textarea>
+                </div>
+                <div class="md:col-span-2 text-center mt-4">
+                    <button type="button" onclick="alert('Inquiry Sent! We will contact you soon.')" class="btn-primary text-white px-12 py-4 rounded-2xl font-bold text-sm uppercase tracking-widest hover:scale-105 transition w-full md:w-auto">
+                        Send Inquiry
+                    </a>
+                </div>
+            </form>
         </div>
     </section>
 
-    <section id="pricing" class="py-32 px-6 lg:px-12 max-w-7xl mx-auto">
-        <h2 class="text-4xl font-bold font-heading text-center mb-16">Deployment Plans</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="glass p-10 rounded-[2.5rem] flex flex-col justify-between hover:border-indigo-500/50 transition">
-                <div><h3 class="text-xl font-bold mb-1">Starter</h3><div class="text-4xl font-bold mb-8">$499</div><ul class="text-gray-500 text-sm space-y-4"><li>○ Basic Website</li><li>○ Single AI Integration</li><li>○ Standard Support</li></ul></div>
-                <button class="mt-10 border border-white/10 py-4 rounded-2xl font-bold text-xs hover:bg-white/5">Select</button>
-            </div>
-            <div class="glass p-10 rounded-[2.5rem] border-2 border-indigo-500 shadow-2xl shadow-indigo-500/20 relative">
-                <div class="absolute top-0 right-0 bg-indigo-500 text-white px-5 py-1 text-[10px] font-bold rounded-bl-2xl uppercase">Popular</div>
-                <div><h3 class="text-xl font-bold mb-1 text-indigo-400">Professional</h3><div class="text-4xl font-bold mb-8">$1,499</div><ul class="text-gray-400 text-sm space-y-4"><li>● AI Dashboard</li><li>● MongoDB Persistent Memory</li><li>● Priority Deployment</li></ul></div>
-                <button class="mt-10 btn-primary text-white py-4 rounded-2xl font-bold text-xs hover:scale-105 transition">Select</button>
-            </div>
-            <div class="glass p-10 rounded-[2.5rem] hover:border-indigo-500/50 transition">
-                <div><h3 class="text-xl font-bold mb-1">Enterprise</h3><div class="text-2xl font-bold mb-8 italic text-gray-500">Custom Quote</div><ul class="text-gray-500 text-sm space-y-4"><li>○ Full Platform Build</li><li>○ Custom RAG Training</li><li>○ 24/7 Support</li></ul></div>
-                <button class="mt-10 border border-white/10 py-4 rounded-2xl font-bold text-xs hover:bg-white/5">Contact Us</button>
-            </div>
-        </div>
-    </section>
-
-    <footer id="contact" class="py-20 text-center border-t border-white/5">
+    <footer class="py-20 text-center border-t border-white/5">
         <div class="text-2xl font-extrabold gradient-text mb-6">CORELOGIC</div>
-        <p class="text-gray-500 text-[10px] tracking-[0.3em] font-bold uppercase">&copy; 2026 CoreLogic AI Systems | Developed by Husnain</p>
+        <div class="flex justify-center space-x-6 mb-8 text-gray-500">
+            <a href="#" class="hover:text-white transition"><i data-lucide="github"></i></a>
+            <a href="#" class="hover:text-white transition"><i data-lucide="linkedin"></i></a>
+            <a href="#" class="hover:text-white transition"><i data-lucide="twitter"></i></a>
+        </div>
+        <p class="text-gray-500 text-[10px] tracking-[0.3em] font-bold uppercase">&copy; 2026 CoreLogic AI Systems | Faisalabad, PK</p>
     </footer>
 
     <script>lucide.createIcons();</script>
