@@ -15,18 +15,16 @@
         .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.05); }
         .gradient-text { background: linear-gradient(90deg, #6366F1, #38BDF8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         
-        /* ✅ FIXED IMAGES FOR ALL 6 CARDS */
-        .c-web { background-image: linear-gradient(to top, #030712, rgba(3,7,18,0.3)), url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format'); background-size: cover; background-position: center; }
-        .c-app { background-image: linear-gradient(to top, #030712, rgba(3,7,18,0.3)), url('https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=800&auto=format'); background-size: cover; background-position: center; }
-        .c-ai { background-image: linear-gradient(to top, #030712, rgba(3,7,18,0.3)), url('https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=800&auto=format'); background-size: cover; background-position: center; }
-        .c-plug { background-image: linear-gradient(to top, #030712, rgba(3,7,18,0.3)), url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format'); background-size: cover; background-position: center; }
-        .c-ui { background-image: linear-gradient(to top, #030712, rgba(3,7,18,0.3)), url('https://images.unsplash.com/photo-1586717791821-3f44a563eb4c?q=80&w=800&auto=format'); background-size: cover; background-position: center; }
-        .c-auto { background-image: linear-gradient(to top, #030712, rgba(3,7,18,0.3)), url('https://images.unsplash.com/photo-1518433278988-2b2bb797951c?q=80&w=800&auto=format'); background-size: cover; background-position: center; }
+        /* ✅ FIXED IMAGES FOR ALL 6 CARDS (MANUALLY VERIFIED) */
+        .c-web { background-image: linear-gradient(to top, #030712, rgba(3, 7, 18, 0.3)), url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format'); background-size: cover; background-position: center; }
+        .c-app { background-image: linear-gradient(to top, #030712, rgba(3, 7, 18, 0.3)), url('https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=800&auto=format'); background-size: cover; background-position: center; }
+        .c-ai { background-image: linear-gradient(to top, #030712, rgba(3, 7, 18, 0.3)), url('https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=800&auto=format'); background-size: cover; background-position: center; }
+        .c-plug { background-image: linear-gradient(to top, #030712, rgba(3, 7, 18, 0.3)), url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format'); background-size: cover; background-position: center; }
+        .c-ui { background-image: linear-gradient(to top, #030712, rgba(3, 7, 18, 0.4)), url('https://images.unsplash.com/photo-1586717791821-3f44a563eb4c?q=80&w=800&auto=format'); background-size: cover; background-position: center; }
+        .c-auto { background-image: linear-gradient(to top, #030712, rgba(3, 7, 18, 0.4)), url('https://images.unsplash.com/photo-1518433278988-2b2bb797951c?q=80&w=800&auto=format'); background-size: cover; background-position: center; }
 
         .btn-p { background: linear-gradient(90deg, #6366F1, #818CF8); transition: 0.3s; }
         .btn-p:hover { box-shadow: 0 0 30px rgba(99, 102, 241, 0.4); transform: scale(1.05); }
-        .pulse-online { width: 10px; height: 10px; background: #22c55e; border-radius: 50%; box-shadow: 0 0 10px #22c55e; animation: pulse 2s infinite; }
-        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; } }
     </style>
 </head>
 <body>
@@ -45,19 +43,19 @@
 
     <section id="home" class="pt-48 pb-32 px-6 lg:px-12 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
         <div class="flex-1" data-aos="fade-right">
-            <h1 class="text-6xl lg:text-8xl font-extrabold font-heading mb-6 tracking-tighter leading-none text-white uppercase">
+            <h1 class="text-6xl lg:text-8xl font-extrabold font-heading mb-6 tracking-tighter leading-none text-white">
                 Software <br><span class="gradient-text">Warehouse</span>
             </h1>
             <p class="text-gray-400 text-xl max-w-xl mb-10 leading-relaxed">
                 CoreLogic AI Systems builds intelligent software, AI tools, and automation systems that help businesses innovate faster.
             </p>
             <div class="flex gap-4">
-                <a href="#contact" class="btn-p text-white px-10 py-4 rounded-2xl font-bold text-sm shadow-xl transition active:scale-95">Start Project</a>
+                <a href="#contact" class="btn-p text-white px-10 py-4 rounded-2xl font-bold text-sm shadow-xl">Start Project</a>
                 <a href="#dashboard" class="glass border-white/10 text-white px-10 py-4 rounded-2xl font-bold text-sm">View Work</a>
             </div>
         </div>
         <div class="flex-1 w-full" data-aos="fade-left">
-            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200" class="rounded-[3rem] border border-white/5 shadow-2xl opacity-80 w-full h-auto object-cover" alt="Hero Lab">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format" class="rounded-[3rem] border border-white/5 shadow-2xl opacity-80 w-full h-auto object-cover" alt="CoreLogic Lab">
         </div>
     </section>
 
@@ -72,32 +70,32 @@
 
     <section id="services" class="py-32 px-6 lg:px-12 max-w-7xl mx-auto">
         <div class="text-center mb-20" data-aos="fade-up">
-            <h2 class="text-5xl font-bold font-heading mb-4 text-white">Core Capabilities</h2>
-            <p class="text-gray-500 max-w-xl mx-auto">High-end solutions designed to scale your business operations.</p>
+            <h2 class="text-5xl font-bold font-heading mb-4 text-white uppercase tracking-tighter">Core Capabilities</h2>
+            <p class="text-gray-500 max-w-xl mx-auto">Professional automation and development services for the modern age.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="glass c-web p-10 rounded-[2.5rem] h-[400px] flex flex-col justify-end border border-white/5 shadow-xl transition hover:-translate-y-4">
+            <div class="glass c-web p-10 rounded-[2.5rem] h-[450px] flex flex-col justify-end border border-white/5 shadow-xl transition hover:-translate-y-4">
                 <h3 class="text-2xl font-bold mb-2 text-white">Web Development</h3>
                 <p class="text-gray-300 text-sm">Custom SaaS dashboards and admin systems.</p>
             </div>
-            <div class="glass c-app p-10 rounded-[2.5rem] h-[400px] flex flex-col justify-end border border-white/5 shadow-xl transition hover:-translate-y-4">
-                <h3 class="text-2xl font-bold mb-2 text-white">Mobile Apps</h3>
+            <div class="glass c-app p-10 rounded-[2.5rem] h-[450px] flex flex-col justify-end border border-white/5 shadow-xl transition hover:-translate-y-4">
+                <h3 class="text-2xl font-bold mb-2 text-white text-sky-400">Mobile Apps</h3>
                 <p class="text-gray-300 text-sm">Android and iOS apps with modern frameworks.</p>
             </div>
-            <div class="glass c-ai p-10 rounded-[2.5rem] h-[400px] flex flex-col justify-end border border-white/5 shadow-xl transition hover:-translate-y-4">
-                <h3 class="text-2xl font-bold mb-2 text-indigo-400 font-heading tracking-widest uppercase">AI Solutions</h3>
-                <p class="text-gray-300 text-sm">Custom RAG LLMs and automation agents.</p>
+            <div class="glass c-ai p-10 rounded-[2.5rem] h-[450px] flex flex-col justify-end border border-white/5 shadow-xl transition hover:-translate-y-4">
+                <h3 class="text-2xl font-bold mb-2 text-indigo-400 uppercase tracking-widest">AI Solutions</h3>
+                <p class="text-gray-300 text-sm">Custom LLM training and RAG automation.</p>
             </div>
-            <div class="glass c-plug p-10 rounded-[2.5rem] h-[400px] flex flex-col justify-end border border-white/5 shadow-xl transition hover:-translate-y-4">
+            <div class="glass c-plug p-10 rounded-[2.5rem] h-[450px] flex flex-col justify-end border border-white/5 shadow-xl transition hover:-translate-y-4">
                 <h3 class="text-2xl font-bold mb-2 text-white">Plugins</h3>
                 <p class="text-gray-300 text-sm">WordPress plugins, Chrome extensions, APIs.</p>
             </div>
-            <div class="glass c-ui p-10 rounded-[2.5rem] h-[400px] flex flex-col justify-end border border-white/5 shadow-xl transition hover:-translate-y-4">
-                <h3 class="text-2xl font-bold mb-2 text-white">UI/UX Design</h3>
-                <p class="text-gray-300 text-sm">Modern product interfaces designed for scale.</p>
+            <div class="glass c-ui p-10 rounded-[2.5rem] h-[450px] flex flex-col justify-end border border-white/5 shadow-xl transition hover:-translate-y-4">
+                <h3 class="text-2xl font-bold mb-2 text-white uppercase tracking-widest">UI/UX Design</h3>
+                <p class="text-gray-300 text-sm">Modern product interfaces designed for users.</p>
             </div>
-            <div class="glass c-auto p-10 rounded-[2.5rem] h-[400px] flex flex-col justify-end border border-white/5 shadow-xl transition hover:-translate-y-4">
-                <h3 class="text-2xl font-bold mb-2 text-sky-400 font-heading tracking-widest uppercase">Automation</h3>
+            <div class="glass c-auto p-10 rounded-[2.5rem] h-[450px] flex flex-col justify-end border border-white/5 shadow-xl transition hover:-translate-y-4">
+                <h3 class="text-2xl font-bold mb-2 text-sky-400 uppercase tracking-widest">Automation</h3>
                 <p class="text-gray-300 text-sm">Business workflow and process automation.</p>
             </div>
         </div>
@@ -105,26 +103,19 @@
 
     <section id="dashboard" class="py-32 bg-white/[0.02] border-y border-white/5">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="flex justify-between items-center mb-16">
-                <h2 class="text-5xl font-bold font-heading text-white">Neural Dashboard</h2>
-                <div class="flex items-center space-x-2 bg-green-500/10 px-4 py-2 rounded-xl border border-green-500/20">
-                    <div class="pulse-online"></div>
-                    <span class="text-green-500 text-[10px] font-bold tracking-widest">LIVE NODES</span>
-                </div>
-            </div>
+            <h2 class="text-5xl font-bold font-heading mb-16 text-center text-white">Project Showcase</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                <div class="glass p-10 rounded-[3rem] border-l-8 border-indigo-600 shadow-2xl relative overflow-hidden group">
-                    <div class="absolute -right-10 -top-10 w-40 h-40 bg-indigo-600/10 rounded-full blur-3xl"></div>
-                    <h4 class="text-2xl font-bold mb-2 text-white">Smart WhatsApp Agent</h4>
-                    <p class="text-gray-500 text-[10px] uppercase font-bold tracking-widest mb-6">v2.1 Stable Node</p>
-                    <img src="https://images.unsplash.com/photo-1551288049-bbb6532b6b4d?q=80&w=800&auto=format" class="rounded-2xl h-56 w-full object-cover mb-8 shadow-lg" alt="WhatsApp Bot Dashboard">
-                    <a href="https://api.whatsapp.com/send?phone=15551425420&text=Hello%20CoreLogic" target="_blank" class="btn-p text-white px-10 py-3 rounded-xl font-bold text-xs shadow-lg shadow-indigo-500/20 inline-block transition">LAUNCH DEMO</a>
+                <div class="glass p-10 rounded-[3rem] border-l-8 border-indigo-600 shadow-2xl relative">
+                    <h4 class="text-3xl font-bold mb-2 text-white">WhatsApp Agent</h4>
+                    <p class="text-indigo-400 text-[10px] uppercase font-bold tracking-widest mb-6">v2.1 Stable Node</p>
+                    <img src="https://images.unsplash.com/photo-1551288049-bbb6532b6b4d?q=80&w=1200&auto=format" class="rounded-2xl h-56 w-full object-cover mb-8 shadow-lg" alt="Dashboard">
+                    <a href="https://api.whatsapp.com/send?phone=15551425420&text=Hello" target="_blank" class="btn-p text-white px-10 py-4 rounded-xl font-bold text-xs shadow-xl inline-block transition active:scale-95 uppercase">Launch Demo</a>
                 </div>
                 <div class="glass p-10 rounded-[3rem] border-l-8 border-gray-800 opacity-60">
-                    <h4 class="text-2xl font-bold mb-2 text-gray-500">Doc-Intel RAG Engine</h4>
-                    <p class="text-gray-600 text-xs uppercase font-bold tracking-widest mb-6">Internal Knowledge Base</p>
-                    <div class="h-56 bg-white/5 rounded-2xl flex items-center justify-center text-gray-700 font-bold italic mb-8 border border-white/10 tracking-widest">SECURE ENCRYPTION ACTIVE</div>
-                    <button class="bg-white/5 text-gray-600 px-10 py-3 rounded-xl font-bold text-xs cursor-not-allowed uppercase tracking-wider">Deployment Phase</button>
+                    <h4 class="text-3xl font-bold mb-2 text-gray-500">Doc-Intel RAG</h4>
+                    <p class="text-gray-600 text-xs uppercase font-bold tracking-widest mb-6">Knowledge Base AI</p>
+                    <div class="h-56 bg-white/5 rounded-2xl flex items-center justify-center text-gray-700 font-bold italic mb-8 border border-white/5">NODE ENCRYPTED...</div>
+                    <button class="bg-white/5 text-gray-600 px-10 py-4 rounded-xl font-bold text-xs cursor-not-allowed uppercase">Under Deployment</button>
                 </div>
             </div>
         </div>
@@ -138,33 +129,23 @@
                 <a href="#contact" class="mt-12 block border border-white/10 text-center py-4 rounded-2xl font-bold text-xs hover:bg-white/5 transition">Select Plan</a>
             </div>
             <div class="glass p-12 rounded-[3rem] border-2 border-indigo-500 relative shadow-2xl shadow-indigo-500/10" data-aos="fade-up">
-                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-indigo-600 px-6 py-1 text-[10px] font-bold rounded-full uppercase tracking-widest">Most Popular</div>
-                <div><h3 class="text-xl font-bold mb-2 text-indigo-400 uppercase tracking-widest">Professional</h3><div class="text-5xl font-bold mb-8">$1,499</div><ul class="text-gray-400 text-sm space-y-4 font-medium"><li>● Full SaaS Dashboard</li><li>● MongoDB Memory</li><li>● WhatsApp API</li><li>● Premium UI</li></ul></div>
-                <a href="#contact" class="mt-12 block btn-p text-white text-center py-4 rounded-2xl font-bold text-xs uppercase tracking-widest">Get Started</a>
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-indigo-600 px-6 py-1 text-[10px] font-bold rounded-full uppercase tracking-widest">Popular</div>
+                <div><h3 class="text-xl font-bold mb-2 text-indigo-400 uppercase tracking-widest font-heading">Professional</h3><div class="text-5xl font-bold mb-8">$1,499</div><ul class="text-gray-400 text-sm space-y-4 font-medium"><li>● Full SaaS Dashboard</li><li>● MongoDB Persistent Memory</li><li>● WhatsApp Business API</li><li>● Premium UI/UX</li></ul></div>
+                <a href="#contact" class="mt-12 block btn-p text-white text-center py-4 rounded-2xl font-bold text-xs uppercase tracking-widest">Start Now</a>
             </div>
             <div class="glass p-12 rounded-[3rem]" data-aos="fade-up">
-                <h3 class="text-xl font-bold mb-2 text-white">Enterprise</h3><div class="text-2xl italic text-gray-500 mb-8">Custom Quote</div><ul class="text-gray-500 text-sm space-y-4"><li>● Specialized RAG Systems</li><li>● Full Mobile Apps</li><li>● 24/7 Priority Access</li></ul>
-                <a href="#contact" class="mt-12 block border border-white/10 text-center py-4 rounded-2xl font-bold text-xs hover:bg-white/5 transition">Contact Sales</a>
+                <h3 class="text-xl font-bold mb-2 text-white">Enterprise</h3><div class="text-2xl italic text-gray-500 mb-8">Custom Quote</div><ul class="text-gray-500 text-sm space-y-4"><li>● Specialized AI Training</li><li>● Full Stack Apps</li><li>● 24/7 Priority Support</li></ul>
+                <a href="#contact" class="mt-12 block border border-white/10 text-center py-4 rounded-2xl font-bold text-xs hover:bg-white/5 transition uppercase tracking-widest">Contact Sales</a>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-32 px-6 lg:px-12 max-w-5xl mx-auto">
-        <div class="glass p-16 rounded-[4rem] text-center border border-indigo-500/10 shadow-2xl">
-            <h2 class="text-5xl font-bold font-heading mb-8 leading-tight text-white uppercase tracking-tighter leading-none">Ready to <span class="gradient-text">Automate?</span></h2>
-            <div class="flex flex-col md:flex-row justify-center gap-6 mt-12">
-                <input type="email" placeholder="Your work email" class="glass px-10 py-4 rounded-2xl border-white/10 outline-none w-full md:w-96 text-sm text-white focus:border-indigo-500 transition">
-                <button class="btn-p text-white px-10 py-4 rounded-2xl font-bold text-xs uppercase tracking-widest shadow-xl">Inquire Now</button>
-            </div>
-        </div>
-    </section>
-
-    <footer class="py-20 text-center border-t border-white/5">
-        <div class="text-3xl font-extrabold gradient-text mb-10 tracking-tighter">CORELOGIC</div>
+    <footer id="contact" class="py-20 text-center border-t border-white/5">
+        <div class="text-3xl font-extrabold gradient-text mb-10 tracking-tighter uppercase font-heading">CORELOGIC</div>
         <div class="flex justify-center space-x-12 mb-12 text-gray-500 text-xs font-bold tracking-widest uppercase">
             <a href="#home">Home</a> <a href="#services">Services</a> <a href="#dashboard">Dashboard</a> <a href="#pricing">Pricing</a>
         </div>
-        <p class="text-gray-700 text-[10px] tracking-[0.5em] font-bold uppercase">&copy; 2026 CoreLogic AI Systems | Built by Husnain</p>
+        <p class="text-gray-700 text-[10px] tracking-[0.5em] font-bold uppercase">&copy; 2026 CoreLogic AI Systems | Developed by Husnain</p>
     </footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
