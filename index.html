@@ -3,103 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoreLogic AI Systems | Next-Gen Software & AI Solutions</title>
-    <meta name="description" content="CoreLogic AI Systems is a leading software development company providing web development, AI solutions, and custom automation.">
+    <title>CoreLogic AI Systems | Enterprise AI & Software Lab</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/lucide@latest"></script>
+    
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #0F172A; color: #E5E7EB; }
-        .font-heading { font-family: 'Poppins', sans-serif; }
-        .glass { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
-        .neon-border { border-color: rgba(99, 102, 241, 0.5); box-shadow: 0 0 20px rgba(99, 102, 241, 0.2); }
-        .gradient-text { background: linear-gradient(90deg, #6366F1, #38BDF8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .btn-primary { background: linear-gradient(90deg, #6366F1, #818CF8); transition: 0.3s all; }
-        .btn-primary:hover { box-shadow: 0 0 30px rgba(99, 102, 241, 0.5); transform: translateY(-2px); }
-        .feature-card:hover { border-color: #6366F1; transform: translateY(-10px); background: rgba(99, 102, 241, 0.05); }
+        :root { --p: #6366F1; --s: #38BDF8; --bg: #030712; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: var(--bg); color: #fff; overflow-x: hidden; }
+        
+        /* Premium Background Effects */
+        #particles-js { position: fixed; width: 100%; height: 100%; z-index: -1; top: 0; left: 0; }
+        .mesh-gradient {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle at 80% 20%, rgba(99, 102, 241, 0.15) 0%, transparent 40%),
+                        radial-gradient(circle at 20% 80%, rgba(56, 189, 248, 0.1) 0%, transparent 40%);
+            z-index: -2;
+        }
+
+        .glass { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .glass-hover:hover { background: rgba(255, 255, 255, 0.05); border-color: var(--s); transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.5); }
+        
+        .gradient-text { background: linear-gradient(135deg, #fff 0%, #6366F1 50%, #38BDF8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        
+        /* Animated Timeline Line */
+        .process-line { position: absolute; left: 50%; width: 2px; height: 100%; background: linear-gradient(to bottom, var(--p), var(--s)); opacity: 0.2; }
+
+        .pricing-card-featured { border: 2px solid var(--p); box-shadow: 0 0 30px rgba(99, 102, 241, 0.2); }
     </style>
 </head>
 <body>
+    <div id="particles-js"></div>
+    <div class="mesh-gradient"></div>
 
-    <nav class="fixed w-full z-50 glass border-b border-white/5 py-4 px-6 lg:px-12 flex justify-between items-center">
-        <div class="text-2xl font-extrabold tracking-tighter text-white font-heading">CORE<span class="text-indigo-500">LOGIC</span></div>
-        <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-400">
+    <nav class="fixed w-full z-[100] glass border-b border-white/5 py-4 px-12 flex justify-between items-center">
+        <div class="text-2xl font-extrabold tracking-tighter gradient-text">CORE<span class="text-white">LOGIC</span></div>
+        <div class="hidden lg:flex space-x-10 text-xs font-bold tracking-widest uppercase text-gray-400">
             <a href="#home" class="hover:text-white transition">Home</a>
             <a href="#services" class="hover:text-white transition">Services</a>
-            <a href="#ai" class="hover:text-white transition">AI Solutions</a>
+            <a href="#process" class="hover:text-white transition">Process</a>
             <a href="#pricing" class="hover:text-white transition">Pricing</a>
+            <a href="#contact" class="hover:text-white transition text-sky-400">Get Quote</a>
         </div>
-        <a href="#contact" class="btn-primary text-white px-6 py-2 rounded-full font-bold text-sm">Get a Quote</a>
     </nav>
 
-    <section id="home" class="pt-32 pb-20 px-6 lg:px-12 min-h-screen flex flex-col items-center text-center">
-        <div class="inline-block px-4 py-1.5 mb-6 glass rounded-full border border-white/10 text-xs font-bold tracking-widest text-indigo-400 uppercase">
-            🚀 The Future of Automation is Here
-        </div>
-        <h1 class="text-5xl lg:text-8xl font-extrabold font-heading mb-6 tracking-tight leading-[1.1]">
-            Next-Generation <span class="gradient-text">Software & AI</span> Solutions
-        </h1>
-        <p class="text-gray-400 text-lg lg:text-xl max-w-3xl mb-10 leading-relaxed">
-            We build powerful digital products including web applications, AI tools, and custom automation systems for modern businesses.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4">
-            <a href="#portfolio" class="btn-primary text-white px-10 py-4 rounded-2xl font-bold text-lg">Start Your Project</a>
-            <a href="#" class="glass px-10 py-4 rounded-2xl font-bold text-lg border border-white/10 hover:bg-white/5 transition">View Portfolio</a>
-        </div>
-        <div class="mt-20 w-full max-w-5xl glass rounded-[2.5rem] p-4 neon-border relative overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1551288049-bbb6532b6b4d?auto=format&fit=crop&q=80&w=2070" class="rounded-[2rem] opacity-80" alt="Dashboard Mockup">
-            <div class="absolute inset-0 bg-gradient-to-t from-[#0F172A] via-transparent to-transparent"></div>
-        </div>
-    </section>
-
-    <section class="py-20 border-y border-white/5 bg-white/[0.01]">
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div><h3 class="text-4xl font-bold text-white mb-2">150+</h3><p class="text-gray-500 text-sm uppercase">Projects</p></div>
-            <div><h3 class="text-4xl font-bold text-indigo-500 mb-2">80+</h3><p class="text-gray-500 text-sm uppercase">Clients</p></div>
-            <div><h3 class="text-4xl font-bold text-white mb-2">25</h3><p class="text-gray-500 text-sm uppercase">AI Agents</p></div>
-            <div><h3 class="text-4xl font-bold text-green-500 mb-2">99.9%</h3><p class="text-gray-500 text-sm uppercase">Uptime</p></div>
-        </div>
-    </section>
-
-    <section id="services" class="py-24 px-6 lg:px-12 max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl font-bold font-heading mb-4">Our Core Expertise</h2>
-            <p class="text-gray-400 max-w-xl mx-auto">High-end solutions designed to scale your business operations.</p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="feature-card glass p-8 rounded-3xl border border-white/5 transition-all duration-500">
-                <i data-lucide="layout" class="text-indigo-500 mb-6 w-10 h-10"></i>
-                <h3 class="text-xl font-bold mb-4">Web Development</h3>
-                <p class="text-gray-500 text-sm leading-relaxed">Custom websites, SaaS dashboards, and complex admin systems built with Next.js & React.</p>
+    <section id="home" class="relative pt-48 pb-32 px-12 flex flex-col lg:flex-row items-center gap-16 max-w-7xl mx-auto">
+        <div class="flex-1" data-aos="fade-right">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full glass border-white/10 text-[10px] font-bold tracking-widest text-sky-400 uppercase mb-6">
+                <span class="flex h-2 w-2 rounded-full bg-sky-400 animate-ping"></span>
+                <span>Next-Gen Software Lab</span>
             </div>
-            <div class="feature-card glass p-8 rounded-3xl border border-white/5 transition-all duration-500">
-                <i data-lucide="cpu" class="text-green-500 mb-6 w-10 h-10"></i>
+            <h1 class="text-6xl lg:text-8xl font-extrabold tracking-tighter leading-none mb-8">
+                Engineering <span class="gradient-text">Intelligence.</span>
+            </h1>
+            <p class="text-gray-400 text-xl max-w-xl mb-12 leading-relaxed">
+                We build powerful digital products including web applications, AI tools, and custom automation systems for modern businesses.
+            </p>
+            <div class="flex space-x-6">
+                <button class="bg-indigo-600 hover:bg-indigo-500 text-white px-10 py-4 rounded-2xl font-bold transition shadow-lg shadow-indigo-500/20">Start Project</button>
+                <button class="glass border-white/10 hover:bg-white/5 px-10 py-4 rounded-2xl font-bold transition">Portfolio</button>
+            </div>
+        </div>
+        <div class="flex-1 relative" data-aos="fade-left">
+            <div class="glass p-4 rounded-[3rem] border-white/10 overflow-hidden rotate-3 hover:rotate-0 transition duration-700">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2426" class="rounded-[2.5rem] opacity-70" alt="Dashboard Preview">
+            </div>
+        </div>
+    </section>
+
+    <div class="py-12 border-y border-white/5 bg-white/[0.01]" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto px-12 grid grid-cols-2 lg:grid-cols-4 gap-12 text-center">
+            <div><h4 class="text-4xl font-bold">150+</h4><p class="text-gray-500 text-xs uppercase tracking-widest mt-2">Projects</p></div>
+            <div><h4 class="text-4xl font-bold text-indigo-500">80+</h4><p class="text-gray-500 text-xs uppercase tracking-widest mt-2">Clients</p></div>
+            <div><h4 class="text-4xl font-bold">25</h4><p class="text-gray-500 text-xs uppercase tracking-widest mt-2">AI Agents</p></div>
+            <div><h4 class="text-4xl font-bold text-green-500">10+</h4><p class="text-gray-500 text-xs uppercase tracking-widest mt-2">Years Exp</p></div>
+        </div>
+    </div>
+
+    <section id="services" class="py-32 px-12 max-w-7xl mx-auto">
+        <div class="text-center mb-20" data-aos="fade-up">
+            <h2 class="text-4xl font-bold mb-4">Core Capabilities</h2>
+            <p class="text-gray-500">Professional automation and development services.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="glass p-10 rounded-[2.5rem] glass-hover transition" data-aos="zoom-in">
+                <i data-lucide="monitor" class="text-indigo-500 mb-6"></i>
+                <h3 class="text-xl font-bold mb-4">Web Systems</h3>
+                <p class="text-gray-500 text-sm">Custom SaaS dashboards and admin panels built for scale.</p>
+            </div>
+            <div class="glass p-10 rounded-[2.5rem] glass-hover transition" data-aos="zoom-in" data-aos-delay="100">
+                <i data-lucide="smartphone" class="text-sky-500 mb-6"></i>
+                <h3 class="text-xl font-bold mb-4">Mobile Apps</h3>
+                <p class="text-gray-500 text-sm">High-performance iOS and Android applications.</p>
+            </div>
+            <div class="glass p-10 rounded-[2.5rem] glass-hover transition" data-aos="zoom-in" data-aos-delay="200">
+                <i data-lucide="cpu" class="text-purple-500 mb-6"></i>
                 <h3 class="text-xl font-bold mb-4">AI Solutions</h3>
-                <p class="text-gray-500 text-sm leading-relaxed">Retrieval-Augmented Generation (RAG) systems that turn your PDFs into smart agents.</p>
+                <p class="text-gray-500 text-sm">Custom LLM training and RAG implementation.</p>
             </div>
-            <div class="feature-card glass p-8 rounded-3xl border border-white/5 transition-all duration-500">
-                <i data-lucide="zap" class="text-sky-500 mb-6 w-10 h-10"></i>
-                <h3 class="text-xl font-bold mb-4">Automation</h3>
-                <p class="text-gray-500 text-sm leading-relaxed">Custom WhatsApp bots and workflow automation tools to replace manual labor.</p>
+            </div>
+    </section>
+
+    <section id="process" class="py-32 bg-white/[0.01]">
+        <div class="max-w-4xl mx-auto px-12 relative text-center">
+            <h2 class="text-4xl font-bold mb-16">The Lifecycle</h2>
+            <div class="space-y-24">
+                <div class="relative z-10" data-aos="fade-up">
+                    <span class="text-6xl font-black text-white/5 absolute -top-10 left-1/2 -translate-x-1/2">01</span>
+                    <h4 class="text-2xl font-bold">Research & Strategy</h4>
+                    <p class="text-gray-500 mt-2">Defining the roadmap for your digital success.</p>
+                </div>
+                <div class="relative z-10" data-aos="fade-up">
+                    <span class="text-6xl font-black text-white/5 absolute -top-10 left-1/2 -translate-x-1/2">02</span>
+                    <h4 class="text-2xl font-bold">Architecture</h4>
+                    <p class="text-gray-500 mt-2">Designing scalable database and UI structures.</p>
+                </div>
+                <div class="relative z-10" data-aos="fade-up">
+                    <span class="text-6xl font-black text-white/5 absolute -top-10 left-1/2 -translate-x-1/2">03</span>
+                    <h4 class="text-2xl font-bold">Deployment</h4>
+                    <p class="text-gray-500 mt-2">Pushing your product to global cloud servers.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="py-20 px-6">
-        <div class="max-w-5xl mx-auto glass p-12 rounded-[3rem] text-center border border-indigo-500/20 relative overflow-hidden">
-            <div class="absolute -top-24 -left-24 w-64 h-64 bg-indigo-600/10 rounded-full blur-[100px]"></div>
-            <h2 class="text-3xl lg:text-5xl font-bold mb-6">Ready to Build the Future?</h2>
-            <p class="text-gray-400 mb-8 max-w-lg mx-auto">Join 80+ global clients who have transformed their businesses with CoreLogic.</p>
-            <a href="mailto:contact@corelogic.ai" class="btn-primary text-white px-12 py-4 rounded-2xl font-bold inline-block">Schedule a Consultation</a>
+    <section id="pricing" class="py-32 px-12 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="glass p-12 rounded-[3rem] flex flex-col justify-between" data-aos="fade-up">
+                <div>
+                    <h3 class="text-xl font-bold mb-2">Starter</h3>
+                    <div class="text-4xl font-bold mb-6">$499</div>
+                    <ul class="text-gray-500 text-sm space-y-4">
+                        <li>● Single Web Page</li>
+                        <li>● Basic AI Chatbot</li>
+                        <li>● Domain Setup</li>
+                    </ul>
+                </div>
+                <button class="mt-12 glass border-white/10 py-3 rounded-xl hover:bg-white/5 transition">Select Plan</button>
+            </div>
+            
+            <div class="glass p-12 rounded-[3rem] pricing-card-featured flex flex-col justify-between relative" data-aos="fade-up" data-aos-delay="100">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-indigo-600 text-[10px] font-bold px-4 py-1 rounded-full uppercase tracking-widest">Most Popular</div>
+                <div>
+                    <h3 class="text-xl font-bold mb-2 text-indigo-400">Professional</h3>
+                    <div class="text-4xl font-bold mb-6">$1,499</div>
+                    <ul class="text-gray-500 text-sm space-y-4">
+                        <li>● Multi-page Dashboard</li>
+                        <li>● Advanced AI Logic</li>
+                        <li>● 3rd Party Integrations</li>
+                    </ul>
+                </div>
+                <button class="mt-12 bg-indigo-600 py-3 rounded-xl hover:bg-indigo-500 transition">Select Plan</button>
+            </div>
+
+            <div class="glass p-12 rounded-[3rem] flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
+                <div>
+                    <h3 class="text-xl font-bold mb-2">Enterprise</h3>
+                    <div class="text-2xl font-bold mb-6 text-gray-400 italic">Custom Quote</div>
+                    <ul class="text-gray-500 text-sm space-y-4">
+                        <li>● Full Scale SaaS</li>
+                        <li>● Custom AI Model Training</li>
+                        <li>● 24/7 Dedicated Support</li>
+                    </ul>
+                </div>
+                <button class="mt-12 glass border-white/10 py-3 rounded-xl hover:bg-white/5 transition">Contact Us</button>
+            </div>
         </div>
     </section>
 
-    <footer class="py-12 text-center text-gray-600 text-sm border-t border-white/5">
-        &copy; 2026 CoreLogic AI Systems. Engineered for Excellence.
+    <footer class="py-20 text-center border-t border-white/5">
+        <div class="text-2xl font-extrabold gradient-text mb-6">CORELOGIC</div>
+        <p class="text-gray-600 text-sm">&copy; 2026 CoreLogic AI Systems. Engineering the future with Husnain.</p>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
+        AOS.init({ duration: 1000, once: true });
         lucide.createIcons();
+
+        /* Particles Configuration */
+        particlesJS('particles-js', {
+            "particles": {
+                "number": { "value": 40, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#6366F1" },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.2, "random": false },
+                "size": { "value": 2, "random": true },
+                "line_linked": { "enable": true, "distance": 150, "color": "#6366F1", "opacity": 0.1, "width": 1 },
+                "move": { "enable": true, "speed": 1, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false }
+            },
+            "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "grab" } } },
+            "retina_detect": true
+        });
     </script>
 </body>
 </html>
