@@ -3,114 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoreLogic AI Systems | Engineering Intelligence</title>
+    <title>CoreLogic AI Systems | Software Warehouse</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #030712; color: #f8fafc; overflow-x: hidden; }
-        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.08); }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #020617; color: #f8fafc; overflow-x: hidden; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
         .gradient-text { background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #38bdf8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card-service { height: 280px; background-size: cover; background-position: center; border-radius: 2rem; border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease; }
+        .card-service:hover { transform: translateY(-8px); border-color: rgba(99, 102, 241, 0.4); }
         
-        /* Service Cards with Fallback Colors */
-        .card-service { height: 260px; background-size: cover; background-position: center; border-radius: 2rem; border: 1px solid rgba(255,255,255,0.05); position: relative; overflow: hidden; transition: all 0.3s ease; }
-        .card-service:hover { transform: translateY(-5px); border-color: rgba(99, 102, 241, 0.3); }
-        .bg-web { background-color: #1e1b4b; background-image: linear-gradient(to top, #030712, transparent), url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&q=80'); }
-        .bg-app { background-color: #1e1b4b; background-image: linear-gradient(to top, #030712, transparent), url('https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500&q=80'); }
-        .bg-ai { background-color: #1e1b4b; background-image: linear-gradient(to top, #030712, transparent), url('https://images.unsplash.com/photo-1677442136019-21780ecad995?w=500&q=80'); }
-        .bg-auto { background-color: #1e1b4b; background-image: linear-gradient(to top, #030712, transparent), url('https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=500&q=80'); }
+        /* Stable Service Images */
+        .bg-web { background-image: linear-gradient(to top, #020617, transparent), url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&q=80'); }
+        .bg-app { background-image: linear-gradient(to top, #020617, transparent), url('https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500&q=80'); }
+        .bg-ai { background-image: linear-gradient(to top, #020617, transparent), url('https://images.unsplash.com/photo-1677442136019-21780ecad995?w=500&q=80'); }
+        .bg-plug { background-image: linear-gradient(to top, #020617, transparent), url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500&q=80'); }
+        .bg-ui { background-image: linear-gradient(to top, #020617, transparent), url('https://images.unsplash.com/photo-1586717791821-3f44a563eb4c?w=500&q=80'); }
+        .bg-auto { background-image: linear-gradient(to top, #020617, transparent), url('https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=500&q=80'); }
     </style>
 </head>
 <body>
 
-    <nav class="fixed w-full z-50 glass border-b border-white/5 py-5 px-6 lg:px-12 flex justify-between items-center">
-        <div class="text-2xl font-extrabold tracking-tighter text-white">CORE<span class="text-indigo-500">LOGIC</span></div>
-        <div class="hidden md:flex space-x-10 text-[10px] font-bold tracking-[0.2em] uppercase text-slate-400">
-            <a href="#home" class="hover:text-white transition">Home</a>
-            <a href="#services" class="hover:text-white transition">Services</a>
-            <a href="#dashboard" class="hover:text-white transition text-cyan-400">Node Status</a>
-            <a href="#pricing" class="hover:text-white transition">Pricing</a>
+    <nav class="fixed w-full z-50 glass border-b border-white/5 py-4 px-6 lg:px-12 flex justify-between items-center">
+        <div class="text-2xl font-extrabold tracking-tighter text-white uppercase">CORE<span class="text-indigo-500">LOGIC</span></div>
+        <div class="hidden md:flex space-x-8 text-[10px] font-bold tracking-[0.2em] uppercase text-slate-400">
+            <a href="#home">Home</a> <a href="#services">Services</a> <a href="#dashboard">Node Status</a> <a href="#pricing">Pricing</a>
         </div>
-        <a href="#contact" class="bg-indigo-600 text-white px-8 py-2.5 rounded-full font-bold text-[10px] uppercase tracking-widest shadow-lg shadow-indigo-500/20">Get Quote</a>
+        <a href="#contact" class="bg-indigo-600 text-white px-8 py-2.5 rounded-full font-bold text-[10px] uppercase tracking-widest shadow-lg shadow-indigo-500/20 transition hover:bg-indigo-500">Get Quote</a>
     </nav>
 
-    <section id="home" class="pt-52 pb-32 px-6 lg:px-12 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-20">
+    <section id="home" class="pt-48 pb-24 px-6 lg:px-12 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
         <div class="flex-1">
-            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full glass border-white/10 text-[9px] font-bold text-indigo-400 uppercase tracking-[0.3em] mb-8">
-                <i data-lucide="shield-check" class="w-3 h-3"></i> <span>The Software Warehouse</span>
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full glass border-white/10 text-[9px] font-bold text-indigo-400 uppercase tracking-widest mb-6">
+                <i data-lucide="zap" class="w-3 h-3"></i> <span>The Software Warehouse</span>
             </div>
-            <h1 class="text-7xl lg:text-8xl font-extrabold mb-8 tracking-tighter leading-[0.85]">
-                Engineering <br><span class="gradient-text">Intelligence</span>
-            </h1>
-            <p class="text-slate-400 text-lg mb-12 max-w-lg leading-relaxed italic opacity-80">
-                "Specialized in high-scale AI systems and autonomous business architectures for the next generation."
-            </p>
-            <a href="#contact" class="bg-indigo-600 hover:bg-indigo-500 text-white px-12 py-5 rounded-2xl font-bold text-sm transition-all shadow-xl shadow-indigo-500/20 inline-block">Start Project</a>
+            <h1 class="text-6xl lg:text-8xl font-extrabold mb-6 tracking-tight leading-[0.9]">Engineering <br><span class="gradient-text">Intelligence</span></h1>
+            <p class="text-slate-400 text-lg mb-10 italic max-w-lg leading-relaxed">"Autonomous AI systems and scalable architectures built for the next decade."</p>
+            <a href="#contact" class="bg-indigo-600 text-white px-10 py-5 rounded-2xl font-bold text-sm transition inline-block shadow-xl shadow-indigo-500/10">Start Your Project</a>
         </div>
-        
-        <div class="flex-1 grid grid-cols-2 gap-5 w-full">
-            <div class="card-service bg-web p-8 flex flex-col justify-end">
-                <h3 class="font-bold text-base text-white">Web Systems</h3>
-            </div>
-            <div class="card-service bg-app p-8 flex flex-col justify-end mt-10">
-                <h3 class="font-bold text-base text-white">Mobile Apps</h3>
-            </div>
-            <div class="card-service bg-ai p-8 flex flex-col justify-end">
-                <h3 class="font-bold text-base text-indigo-400">AI Solutions</h3>
-            </div>
-            <div class="card-service bg-auto p-8 flex flex-col justify-end mt-10">
-                <h3 class="font-bold text-base text-cyan-400">Automation</h3>
-            </div>
+        <div class="flex-1 grid grid-cols-2 gap-4">
+            <div class="card-service bg-web p-6 flex flex-col justify-end"><h3>Web Systems</h3></div>
+            <div class="card-service bg-app p-6 flex flex-col justify-end mt-8"><h3>Mobile Apps</h3></div>
         </div>
     </section>
 
-    <section id="dashboard" class="py-32 px-6 lg:px-12 max-w-7xl mx-auto">
-        <div class="glass p-12 lg:p-20 rounded-[4rem] border border-white/10 relative overflow-hidden">
-            <div class="flex flex-col lg:flex-row items-center gap-20">
-                <div class="flex-1">
-                    <div class="flex items-center gap-3 mb-8">
-                        <div class="w-3 h-3 bg-green-500 rounded-full animate-pulse shadow-[0_0_15px_#22c55e]"></div>
-                        <span class="text-green-500 text-[10px] font-bold uppercase tracking-[0.3em]">Neural Node Active</span>
+    <section id="services" class="py-24 px-6 lg:px-12 max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold mb-16 text-center uppercase tracking-tighter">Core Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="card-service bg-ai p-8 flex flex-col justify-end border border-indigo-500/20"><h3 class="text-indigo-400 font-bold">AI Solutions</h3></div>
+            <div class="card-service bg-plug p-8 flex flex-col justify-end"><h3 class="font-bold">Custom Plugins</h3></div>
+            <div class="card-service bg-ui p-8 flex flex-col justify-end"><h3 class="font-bold">UI/UX Design</h3></div>
+            <div class="card-service bg-auto p-8 flex flex-col justify-end"><h3 class="text-cyan-400 font-bold">Automation</h3></div>
+            <div class="card-service bg-web p-8 flex flex-col justify-end"><h3 class="font-bold">Web Architectures</h3></div>
+            <div class="card-service bg-app p-8 flex flex-col justify-end"><h3 class="font-bold">App Development</h3></div>
+        </div>
+    </section>
+
+    <section id="dashboard" class="py-32 px-6 max-w-7xl mx-auto">
+        <div class="glass p-12 rounded-[4rem] border border-white/10 flex flex-col lg:flex-row items-center gap-16">
+            <div class="flex-1">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-3 h-3 bg-green-500 rounded-full animate-pulse shadow-[0_0_10px_#22c55e]"></div>
+                    <span class="text-green-500 text-[10px] font-bold uppercase tracking-widest">Neural Node Active</span>
+                </div>
+                <h2 class="text-5xl font-bold mb-6">WhatsApp Sales Agent</h2>
+                <p class="text-slate-400 text-lg mb-8 italic">"Handling customer inquiries 24/7 with MongoDB persistent memory."</p>
+                <a href="https://api.whatsapp.com/send?phone=15551425420&text=Demo" target="_blank" class="glass px-8 py-4 rounded-2xl font-bold text-[10px] uppercase tracking-widest hover:bg-white/5 transition inline-block">Launch Demo</a>
+            </div>
+            
+            <div class="flex-1 w-full glass rounded-[3rem] p-8 min-h-[350px] relative overflow-hidden border border-indigo-500/20 shadow-2xl">
+                <div class="flex items-center gap-2 mb-8 border-b border-white/5 pb-4">
+                    <div class="w-2 h-2 rounded-full bg-red-500/50"></div>
+                    <div class="w-2 h-2 rounded-full bg-yellow-500/50"></div>
+                    <div class="w-2 h-2 rounded-full bg-green-500/50"></div>
+                    <div class="ml-4 text-[10px] text-slate-500 font-mono tracking-widest uppercase italic">corelogic_v2.terminal</div>
+                </div>
+                <div class="space-y-6">
+                    <div class="h-2 w-3/4 bg-indigo-500/20 rounded-full overflow-hidden"><div class="h-full w-2/3 bg-indigo-500 animate-pulse"></div></div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="h-20 bg-slate-800/40 rounded-xl border border-white/5 p-4"><div class="text-[9px] text-slate-500">CPU Usage</div><div class="text-xs font-bold text-cyan-400">42.8%</div></div>
+                        <div class="h-20 bg-slate-800/40 rounded-xl border border-white/5 p-4"><div class="text-[9px] text-slate-500">Memory</div><div class="text-xs font-bold text-indigo-400">1.2GB</div></div>
                     </div>
-                    <h2 class="text-5xl font-extrabold mb-8 leading-tight">WhatsApp <br><span class="text-indigo-500">Sales Agent</span></h2>
-                    <p class="text-slate-400 text-lg mb-10 leading-relaxed italic">"Integrated with MongoDB persistent memory to handle 10,000+ customer inquiries autonomously."</p>
-                    <a href="https://api.whatsapp.com/send?phone=15551425420&text=Demo" target="_blank" class="glass px-10 py-5 rounded-2xl font-bold text-[10px] uppercase tracking-widest hover:bg-white/5 transition inline-block">Launch Demo</a>
+                    <div class="space-y-2">
+                        <div class="h-1 w-full bg-slate-800/40 rounded-full"></div>
+                        <div class="h-1 w-5/6 bg-slate-800/40 rounded-full"></div>
+                    </div>
                 </div>
-                <div class="flex-1 w-full lg:w-1/2">
-                    <img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-     class="rounded-[3rem] shadow-2xl border border-white/5 w-full h-auto object-cover" 
-     style="min-height: 300px; background-color: #1e1b4b;"
-     alt="CoreLogic Neural Dashboard">
-                </div>
+                <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-indigo-600/20 blur-[80px] rounded-full"></div>
             </div>
         </div>
     </section>
 
     <section id="pricing" class="py-32 px-6 lg:px-12 max-w-7xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-            <div class="glass p-12 rounded-[3.5rem] border border-white/5">
-                <h3 class="text-xl font-bold mb-3">Starter</h3><div class="text-5xl font-extrabold mb-10">$499</div>
-                <ul class="text-slate-500 space-y-5 mb-12 text-sm"><li>○ AI Chatbot Setup</li><li>○ Multi-page Landing</li></ul>
-                <button class="w-full py-4 glass rounded-2xl font-bold text-xs uppercase opacity-50 cursor-not-allowed">Select</button>
+        <h2 class="text-center text-4xl font-bold mb-20 uppercase tracking-tighter">Investment Plans</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="glass p-10 rounded-[3rem] border border-white/5 flex flex-col justify-between">
+                <div><h3 class="text-xl font-bold mb-2">Starter</h3><div class="text-5xl font-extrabold mb-8">$499</div>
+                <ul class="text-slate-500 space-y-4 mb-12 text-sm"><li>● AI Chatbot Integration</li><li>● Multi-page Website</li></ul></div>
+                <button class="w-full py-4 glass rounded-2xl font-bold text-xs">Select</button>
             </div>
-            <div class="glass p-12 rounded-[3.5rem] border-2 border-indigo-500 relative shadow-2xl shadow-indigo-500/10 scale-105">
-                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-indigo-600 text-white px-8 py-1.5 rounded-full text-[9px] font-bold uppercase tracking-[0.2em]">Popular</div>
-                <h3 class="text-xl font-bold mb-3 text-indigo-400">Professional</h3><div class="text-5xl font-extrabold mb-10">$1,499</div>
-                <ul class="text-slate-400 space-y-5 mb-12 text-sm font-bold"><li>● Custom AI Dashboard</li><li>● Persistent Memory Node</li></ul>
-                <button class="w-full py-5 bg-indigo-600 rounded-2xl font-bold text-xs uppercase tracking-widest shadow-xl">Get Started</button>
+            <div class="glass p-10 rounded-[3rem] border-2 border-indigo-500 relative shadow-2xl scale-105">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-indigo-600 px-6 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-white">Popular</div>
+                <div><h3 class="text-xl font-bold mb-2 text-indigo-400">Professional</h3><div class="text-5xl font-extrabold mb-8">$1,499</div>
+                <ul class="text-slate-400 space-y-4 mb-12 text-sm font-bold"><li>● Custom AI Dashboard</li><li>● Persistent Memory Node</li></ul></div>
+                <button class="w-full py-4 bg-indigo-600 rounded-2xl font-bold text-xs uppercase shadow-lg">Get Started</button>
             </div>
-            <div class="glass p-12 rounded-[3.5rem] border border-white/5">
-                <h3 class="text-xl font-bold mb-3">Enterprise</h3><div class="text-2xl font-bold mb-10 italic text-slate-600">Custom Quote</div>
-                <ul class="text-slate-500 space-y-5 mb-12 text-sm"><li>○ Custom LLM Training</li><li>○ 24/7 Dedicated Support</li></ul>
+            <div class="glass p-10 rounded-[3rem] border border-white/5 flex flex-col justify-end">
+                <div><h3 class="text-xl font-bold mb-2">Enterprise</h3><div class="text-2xl font-bold mb-8 italic text-slate-600">Custom Quote</div>
+                <ul class="text-slate-500 space-y-4 mb-12 text-sm"><li>● Full Stack AI Platform</li><li>● 24/7 Dedicated Support</li></ul></div>
                 <button class="w-full py-4 glass rounded-2xl font-bold text-xs uppercase">Contact Sales</button>
             </div>
         </div>
     </section>
 
-    <footer class="py-24 text-center border-t border-white/5 text-slate-700 text-[9px] font-bold uppercase tracking-[0.6em]">
-        &copy; 2026 CoreLogic AI Systems | Faisalabad, PK
-    </footer>
-
-    <script>lucide.createIcons();</script>
-</body>
-</html>
+    <section id="contact" class="py-32 bg-slate-900/40">
+        <div class="max-w-4xl mx-auto px-6 glass p-16 rounded-[4rem]">
+            <h2 class="text-4xl font-bold mb-4 text-center uppercase tracking-tighter">Let's Build the Future</h2>
+            <p class="text-slate-500 mb-12 text-center text-sm tracking-widest uppercase">Start your CoreLogic integration today.</p>
+            <form class="space-y-6 text-left" action="#" onsubmit="alert('Message Sent!'); return false;">
+                <div class="grid grid-cols
